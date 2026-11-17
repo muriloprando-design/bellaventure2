@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F5F0E6;
+    color: #14263D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #14263D;
+    color: #F5F0E6;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #D8BE8A;
+}
+
+.cabecalho h1 {
+    color: #D8BE8A;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.cabecalho p {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* CONTEÚDO */
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+.painel {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #D8BE8A;
+    box-shadow: 0 8px 25px rgba(20, 38, 61, 0.12);
+}
+
+.painel h2 {
+    text-align: center;
+    color: #14263D;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* CHAVE API */
+
+.campo-api {
+    margin-bottom: 20px;
+}
+
+.campo-api label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo-api input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D8BE8A;
+    border-radius: 7px;
+    outline: none;
+}
+
+.campo-api input:focus {
+    border-color: #14263D;
+}
+
+/* ÁREA DE MENSAGEM */
+
+.area-mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.area-mensagem textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 60px;
+    padding: 13px;
+    border: 1px solid #D8BE8A;
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+}
+
+.area-mensagem textarea:focus {
+    border-color: #14263D;
+}
+
+/* BOTÃO */
+
+.area-mensagem button {
+    background-color: #14263D;
+    color: #D8BE8A;
+    border: 1px solid #D8BE8A;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.area-mensagem button:hover {
+    background-color: #D8BE8A;
+    color: #14263D;
+}
+
+.area-mensagem button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #14263D;
+    color: #F5F0E6;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #D8BE8A;
+    font-size: 13px;
+}
+
+footer p + p {
+    margin-top: 6px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+    .painel {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px 12px;
+    }
+
+}
+
+/* NAVEGAÇÃO DO CHATBOT */
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.menu a {
+    color: #F5F0E6;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #D8BE8A;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+}

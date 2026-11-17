@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bellaventure | Atendimento 24 Horas</title>
+
+    <link rel="stylesheet" href="bellechat.css">
+    <link rel="stylesheet" href="styleChatBot.css">
+</head>
+
+<body>
+
+    <header 
+<header class="cabecalho">
+
+    <div class="marca">
+        <h1>BELLAVENTURE</h1>
+        <p>Grandes destinos. Experiências únicas.</p>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="bellechat.html">Atendimento 24 Horas</a>
+    </nav>
+
+</header>
+    
+
+    <main class="container">
+
+        <section class="painel">
+
+            <h2>Atendimento 24 Horas</h2>
+
+            <p class="descricao">
+                Seu assistente virtual para descobrir experiências
+                extraordinárias pelo mundo.
+            </p>
+
+            <div class="campo-api">
+                <label for="apiKey">Chave da API:</label>
+
+                <input
+                    type="password"
+                    id="apiKey"
+                    placeholder="Insira sua chave de API"
+                >
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+
+                <div class="mensagem bot">
+                    Olá! Seja bem-vindo à Bellaventure!
+                    Sou seu assistente virtual. Como posso ajudar
+                    você a planejar sua próxima viagem?
+                </div>
+
+            </div>
+
+            <div class="area-mensagem">
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Digite sua mensagem..."
+                    rows="2"
+                ></textarea>
+
+                <button id="btnEnviar">
+                    Enviar mensagem
+                </button>
+
+            </div>
+
+            <p id="status"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Bellaventure - Todos os direitos reservados.</p>
+        <p>Excelência em viagens de luxo.</p>
+    </footer>
+
+    <script src="bellechat.js"></script>
+
+</body>
+</html>
